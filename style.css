@@ -1,0 +1,60 @@
+/*CSS Reset*/
+
+html {
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  margin-left: 5px;
+  width: 375px;
+  height: 768px;
+  background-image: linear-gradient(
+    to top,
+    #7e64e8,
+    #8b65e9,
+    #9866e9,
+    #a467ea,
+    #af68ea
+  );
+}
+/*Shared / Selectors*/
+
+/*Styling*/
+main {
+  width: 325px;
+  height: 545px;
+}
+
+.img-section {
+}
+
+.woman-img {
+}
+
+.faq-section {
+}
+
+.faq-title {
+}
+
+.faq-item {
+}
+
+.faq-link {
+  list-style: none;
+}
+
+/*Breakpoint Styling*/
+
+@media (min-width: 1440px) {
+}
