@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -21,41 +19,86 @@
   </head>
   <body>
     <main>
-      <section class="img-section">
-        <figure class="woman-img">
-          <!--<img id="img-mobile" src="" alt="">
-          <img id="img-shadow-mobile" src="" alt="">
-          <img id="img-desktop" src="" alt="">
-          <img id="img-shadow-desktop" src="" alt="">-->
-        </figure>
-      </section>
+      <figure class="woman-img">
+        <img
+          class="mobile-img"
+          id="woman-img-mobile"
+          src="./images/illustration-woman-online-mobile.svg"
+          alt=""
+        />
+        <img
+        class="mobile-img"
+          id="img-shadow-mobile"
+          src="./images/bg-pattern-mobile.svg"
+          alt=""
+        />
+        <img class="desktop-img" id="img-box"src="" alt="">
+        <img class="desktop-img" id="woman-img-desktop" src="./images/illustration-woman-online-desktop.svg" alt="">
+        <img class="desktop-img" id="img-shadow-desktop" src="./images/bg-pattern-desktop.svg" alt="">
+      </figure>
       <section class="faq-section">
-        <h1 class="faq-title"></h1>
+        <h1 class="faq-title">FAQ</h1>
 
         <details class="faq-item" id="q1">
-          <summary class="faq-link"><a href="#q1"></a></summary>
-          <p></p>
+          <summary class="faq-question">
+            How many team members can I invite?
+            <img src="./images/icon-arrow-down.svg" />
+          </summary>
+          <p class="faq-answer">
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan. 
+            <div id="space-after-answer"></div>
+          </p>
         </details>
 
         <details class="faq-item" id="q2">
-          <summary class="faq-link"><a href="#q2"></a></summary>
-          <p></p>
+          <summary class="faq-question">
+            What is the maximum file upload size?
+            <img src="./images/icon-arrow-down.svg" />
+          </summary>
+          <p class="faq-answer">
+            No more than 2GB. All files in your account must fit your allotted
+            storage space.
+            <div id="space-after-answer"></div>
+          </p>
         </details>
 
         <details class="faq-item" id="q3">
-          <summary class="faq-link"><a href="#q3"></a></summary>
-          <p></p>
+          <summary class="faq-question">
+            How do I reset my password?
+            <img src="./images/icon-arrow-down.svg" />
+          </summary>
+          <p class="faq-answer">
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.
+            <div id="space-after-answer"></div>
+          </p>
         </details>
 
         <details class="faq-item" id="q4">
-          <summary class="faq-link"><a href="#q4"></a></summary>
-          <p></p>
+          <summary class="faq-question">
+            Can I cancel my subscription?
+            <img src="./images/icon-arrow-down.svg" />
+          </summary>
+          <p class="faq-answer">
+            Yes! Send us a message and we’ll process your request no questions
+            asked.
+            <div id="space-after-answer"></div>
+          </p>
         </details>
 
         <details class="faq-item" id="q5">
-          <summary class="faq-link"><a href="#q5"></a></summary>
-          <p></p>
+          <summary class="faq-question">
+            Do you provide additional support?
+            <img src="./images/icon-arrow-down.svg" />
+          </summary>
+          <p class="faq-answer">
+            Chat and email support is available 24/7. Phone lines are open
+            during normal business hours.
+            <div id="space-after-answer"></div>
+          </p>
         </details>
+
       </section>
     </main>
     <script src="script.js"></script>
