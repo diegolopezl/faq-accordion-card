@@ -50,6 +50,8 @@ main {
   display: grid;
   justify-content: center;
   grid-template: 115px 1fr / 1fr;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 #woman-img-mobile {
@@ -69,7 +71,7 @@ main {
 }
 
 .faq-title {
-  align-self: center;
+  text-align: center;
   font-size: 2.75rem;
   margin: 15px auto;
   font-weight: 700;
@@ -125,11 +127,90 @@ details[open] summary > img {
 /*Breakpoint Styling*/
 
 @media (min-width: 1440px) {
+  body {
+    width: 1440px;
+    overflow: hidden;
+  }
+
+  main {
+    width: 920px;
+    height: 500px;
+    justify-items: center;
+    grid-template: 500px / 460px 460px;
+    overflow: hidden;
+    margin: auto auto 200px auto;
+  }
   .desktop-img {
     display: block;
+    position: relative;
   }
 
   .mobile-img {
     display: none;
+  }
+
+  .woman-img {
+    position: relative;
+  }
+
+  #img-box {
+    top: 380px;
+    right: 100px;
+    width: 200px;
+    z-index: 2;
+  }
+
+  #woman-img-desktop {
+    top: 50px;
+    right: -180px;
+    width: 500px;
+    z-index: 1;
+  }
+
+  #img-shadow-desktop {
+    top: -695px;
+    right: 315px;
+    width: 1000px;
+    z-index: 0;
+  }
+
+  .faq-section {
+    margin: 0;
+    height: 355px;
+    margin-right: 90px;
+    margin-left: 25px;
+  }
+
+  .faq-item {
+    width: 350px;
+  }
+
+  .faq-item:after {
+    width: 100%;
+  }
+
+  .faq-question {
+    width: 100%;
+    margin: 15px auto;
+    font-size: 1.25rem;
+  }
+
+  .faq-item:hover > summary {
+    cursor: pointer;
+  }
+
+  details[open] summary {
+    color: #1d1e35;
+  }
+
+  .faq-answer {
+    margin-left: 0;
+    margin-right: 5px;
+    font-size: 1.05rem;
+  }
+
+  .faq-title {
+    text-align: start;
+    margin: 70px auto 25px 0px;
   }
 }
